@@ -1,0 +1,312 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<style>
+#services-description {
+  background-image: linear-gradient(#3714ff 1px, transparent 1px), linear-gradient(to right, #3714ff 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-color: #fffdf8;
+    /* background-image: repeating-linear-gradient(45deg, #3714ff 0, #3714ff 1px, transparent 0, transparent 50%); */
+    padding: 5rem 0rem;
+}
+
+#footer {
+  background-color: white;
+}
+</style>
+
+<Layout title="Welcome to Astro.">
+    <div class="container text-white" id="home">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-md-6 mb-4">
+          <img src="/images/techshore.png" alt="techshore" width="64">
+          <h1 class="fw-bold mb-0">Techshore</h1>
+          <h3 class="mb-5">Co-Working Space</h3>
+          <h5>Affordable & Comfortable Co-Working Space at the heart of Hyderabad suited for all your business needs.</h5>
+          <a href="#enquiry" class="btn btn-warning btn-lg mt-3">Book Your Space <i class="bi bi-arrow-right ms-3"></i></a>
+        </div>
+        <div class="col-sm-12 col-md-6 mb-4 text-center">
+          <img src="/images/coworking-people.png" alt="cowork" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" id="services">
+      <div class="row mb-3">
+        <div class="col-12">
+          <h2 class="fw-bold text-white">Our Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <h3>Open Desk</h3>
+            <p>Flexible, community-driven workspace where creativity thrives.</p>
+            <a href="#open-desk" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <h3>Dedicated Desk</h3>
+            <p>Your personal workspace, with the benefits of a shared community.</p>
+            <a href="#dedicated-desk" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <h3>Dedicated Cabin</h3>
+            <p> Private space for focused work, with room to grow for you and your team.</p>
+            <a href="#dedicated-cabin" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <h3>Meeting Room</h3>
+            <p>Intimate spaces designed for productive collaborations.</p>
+            <a href="#meeting-room" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <h3>Conference Room</h3>
+            <p>Large, tech-equipped room for impressive presentations and events.</p>
+            <a href="#conference-room" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
+            <!-- <h3>Conference Room</h3> -->
+            <p class="my-auto">And everything you needed for your business!</p>
+            <!-- <a href="#">View</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services-description">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mx-auto" id="open-desk">
+            <div class="card card-body shadow border border-warning border-4 p-5">
+              <img src="/images/flexible.jpeg" alt="flexible" class="img-fluid mb-4" />
+              <h3 class="fw-bold mb-3">Open Desk</h3>
+              <p style="text-align: justify;">Our open desk option offers a dynamic, first-come, first-served environment where you can work alongside freelancers, entrepreneurs, and remote workers. With a vibrant community atmosphere, you’ll enjoy the flexibility of moving around the space while still having access to essential amenities. It’s perfect for those who thrive on collaboration and variety, allowing you to make connections while staying productive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mx-auto" id="dedicated-desk">
+            <div class="card card-body shadow border border-warning border-4 p-5">
+              <img src="/images/dedicated.jpeg" alt="flexible" class="img-fluid mb-4" />
+              <h3 class="fw-bold mb-3">Dedicated Desk</h3>
+              <p style="text-align: justify;"> A dedicated desk provides the stability of a permanent workstation in our shared co-working space. You’ll have a desk that’s yours every day, offering a personalized space where you can leave your equipment and make it feel like home. It’s ideal for professionals who prefer consistency in their workspace while enjoying the energy and networking opportunities that come with being part of a co-working environment. You’ll also have access to all shared amenities, plus a secure spot to focus on your work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mx-auto" id="dedicated-cabin">
+            <div class="card card-body shadow border border-warning border-4 p-5">
+              <img src="/images/cabin.jpeg" alt="flexible" class="img-fluid mb-4" />
+              <h3 class="fw-bold mb-3">Dedicated Cabin</h3>
+              <p style="text-align: justify;">Our dedicated cabins offer a private, lockable office for individuals or small teams. These cabins provide the peace and quiet needed for focused work, client meetings, or confidential discussions, all while giving you access to shared amenities like meeting rooms and community areas. They’re ideal for businesses or professionals looking for privacy and exclusivity, combined with the convenience of a co-working environment. With room to expand, these cabins are perfect for growing teams or startups seeking a professional, permanent base.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mx-auto" id="meeting-room">
+            <div class="card card-body shadow border border-warning border-4 p-5">
+              <img src="/images/meeting.jpeg" alt="flexible" class="img-fluid mb-4" />
+              <h3 class="fw-bold mb-3">Meeting Room</h3>
+              <p style="text-align: justify;">Our meeting rooms are designed for small group discussions, one-on-one meetings, or team collaborations. With a professional yet comfortable atmosphere, these rooms come equipped with everything you need for a productive session. Whether you're hosting a client, interviewing a new team member, or brainstorming with colleagues, our meeting rooms offer privacy and focus. Flexible booking options allow you to reserve these spaces depending on your needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mx-auto" id="conference-room">
+            <div class="card card-body shadow border border-warning border-4 p-5">
+              <img src="/images/conference.jpeg" alt="flexible" class="img-fluid mb-4" />
+              <h3 class="fw-bold mb-3">Conference Room</h3>
+              <p style="text-align: justify;">Designed for larger gatherings, our conference rooms are perfect for board meetings, presentations, workshops, or training sessions. Equipped with state-of-the-art technology including projectors, video conferencing capabilities, and high-speed internet, these rooms ensure your event runs seamlessly. With comfortable seating arrangements and a professional atmosphere, they’re suitable for impressing clients, conducting team strategy sessions, or hosting seminars. Our flexible scheduling and support staff make it easy to arrange the space for your specific requirements, ensuring every event is a success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" style="padding: 5rem 0rem;" id="amenities">
+      <div class="row text-white mb-5">
+        <div class="col-md-6 mx-auto text-center">
+          <h2 class="fw-bold text-white mb-0">Amenities</h2>
+          <p>The space is equipped with the latest technology and amenities to ensure a comfortable and productive environment for your team.</p>
+        </div>
+      </div>
+      <div class="row text-white">
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-router" style="font-size: 2rem;"></i>
+          </div>
+          <p>Hi Speed WiFi</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-printer" style="font-size: 2rem;"></i>
+          </div>
+          <p>Printer & Scanner</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-cup-hot" style="font-size: 2rem;"></i>
+          </div>
+          <p>Kitchen & Coffee</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-clock" style="font-size: 2rem;"></i>
+          </div>
+          <p>24hrs Access</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-fan" style="font-size: 2rem;"></i>
+          </div>
+          <p>Air Conditioning</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-p-circle" style="font-size: 2rem;"></i>
+          </div>
+          <p>Car & Bike Parking</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-projector" style="font-size: 2rem;"></i>
+          </div>
+          <p>Projector</p>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4 text-center">
+          <div>
+            <i class="bi bi-envelope-paper" style="font-size: 2rem;"></i>
+          </div>
+          <p>Mail Handling</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" style="padding-bottom: 5rem;">
+      <div class="row mb-4 text-white">
+        <div class="col-md-6 mx-auto text-center">
+          <h2 class="text-white fw-bold mb-0">Why Choose Us</h2>
+          <p>Here are few reasons why you should choose us over other co-working spaces.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card card-body text-center">
+            <img src="/images/metro.png" alt="metro" class="img-fluid mb-4" />
+            <p>Near to Metro & Local Bus transport</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card card-body text-center">
+            <img src="/images/bus-cen.png" alt="metro" class="img-fluid mb-4" />
+            <p>Surrounded by business centers</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card card-body text-center">
+            <img src="/images/lulu.png" alt="metro" class="img-fluid mb-4" />
+            <p>Near LuLu Mall for all recreationals</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 mb-4">
+          <div class="card card-body text-center">
+            <img src="/images/calm.png" alt="metro" class="img-fluid mb-4" />
+            <p>Calm and relaxing work atmosphere</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container my-5" style="padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="row" id="location">
+          <div class="col-sm-12 col-md-6 mb-5">
+            <h2 class="fw-bold mb-0">Location</h2>
+            <p>Our co-working space is located at the heart of Hyderabad. It is easily accessible by public transportation.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1948342.7868057129!2d77.10483408032363!3d17.490463338590878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9165c9add569%3A0x30c77313f5657b2e!2sTechshore%20Coworking%20Space!5e0!3m2!1sen!2sin!4v1726644678813!5m2!1sen!2sin" width="100%" height="50%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="my-5">
+              <h5 class="fw-bold">Address</h5>
+              <p>Techshore Coworking Space.
+                Lig 20, Dharma Reddy Colony Phase II, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 mb-4" id="enquiry">
+            <h2 class="fw-bold mb-0">Enquiry</h2>
+            <p>We are here to help you with all your business needs. Fill out the form below and we will get back to you shortly.</p>
+            <form action="#" class="mt-4 p-5">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone">
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+
+              <div class="mb-3">
+                <label for="query" class="form-label">Your Query</label>
+                <textarea class="form-control" id="query" rows="2"></textarea> 
+              </div>
+
+              <button type="submit" class="btn btn-warning w-100">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5 pt-5" id="contact" style="padding-bottom: 10rem;">
+        <div class="row">
+          <div class="col-md-4 mx-auto text-center">
+            <h2 class="fw-bold mb-0">Contact</h2>
+            <p>If you have any queries or concerns, please feel free to contact us. We are always happy to help.</p>
+
+            <div>
+              <small>Call</small>
+              <p class="mb-0">+91  90300 82758</p>
+              <a href="https://wa.me/919030082758" class="link-underline link-underline-opacity-0"><i class="bi bi-whatsapp text-success"></i> Chat On WhatsApp</a>
+            </div>
+
+            <div class="mt-4">
+              <small>Email</small>
+              <p class="mb-0">contact@techshorecoworking.com</p>
+            </div>
+
+            <div class="mt-5 py-5">
+              <img src="/images/techshore.png" alt="techshore" width="128">
+              <h1 class="fw-bold mb-0">Techshore</h1>
+              <h3>Co-Working Space</h3> 
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>  
+</Layout>
+
+
