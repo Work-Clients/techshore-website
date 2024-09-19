@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 #services-description {
-  background-image: linear-gradient(#3714ff 1px, transparent 1px), linear-gradient(to right, #3714ff 1px, transparent 1px);
+  /* background-image: linear-gradient(#3714ff 1px, transparent 1px), linear-gradient(to right, #3714ff 1px, transparent 1px); */
   background-size: 50px 50px;
   background-color: #fffdf8;
     /* background-image: repeating-linear-gradient(45deg, #3714ff 0, #3714ff 1px, transparent 0, transparent 50%); */
@@ -16,13 +16,15 @@ import Layout from '../layouts/Layout.astro';
 }
 </style>
 
-<Layout title="Welcome to Astro.">
+<Layout title="Techshore Co-Working Space">
     <div class="container text-white" id="home">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-6 mb-4">
-          <img src="/images/techshore.png" alt="techshore" width="64">
-          <h1 class="fw-bold mb-0">Techshore</h1>
-          <h3 class="mb-5">Co-Working Space</h3>
+          <div class="d-flex">
+            <img src="/images/techshore.png" alt="techshore" width="64">
+            <h1 class="fw-bold mb-0" style="font-size: 53px;">TECHSHORE</h1>
+          </div>
+          <h1 class="mb-5 fw-bold" style="letter-spacing: 2px;">Co-Working Space</h1>
           <h5>Affordable & Comfortable Co-Working Space at the heart of Hyderabad suited for all your business needs.</h5>
           <a href="#enquiry" class="btn btn-warning btn-lg mt-3">Book Your Space <i class="bi bi-arrow-right ms-3"></i></a>
         </div>
@@ -55,16 +57,16 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="col-sm-12 col-md-4 mb-4">
           <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
-            <h3>Dedicated Cabin</h3>
+            <h3>Dedicated Office</h3>
             <p> Private space for focused work, with room to grow for you and your team.</p>
-            <a href="#dedicated-cabin" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+            <a href="#dedicated-offices" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 mb-4">
           <div class="card card-body border border-warning border-5 p-5" style="height: 100%;">
-            <h3>Meeting Room</h3>
+            <h3>Dedicated Cabins</h3>
             <p>Intimate spaces designed for productive collaborations.</p>
-            <a href="#meeting-room" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
+            <a href="#dedicated-cabins" class="link-underline link-underline-opacity-0">View <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 mb-4">
@@ -85,57 +87,108 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div id="services-description">
-      <div class="container">
+
+      <div class="container" id="open-desk">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 mx-auto" id="open-desk">
-            <div class="card card-body shadow border border-warning border-4 p-5">
-              <img src="/images/flexible.jpeg" alt="flexible" class="img-fluid mb-4" />
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="/images/flexible.jpeg" alt="flexible" class="img-fluid mb-4" />
+          </div>
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class=" p-5">
               <h3 class="fw-bold mb-3">Open Desk</h3>
-              <p style="text-align: justify;">Our open desk option offers a dynamic, first-come, first-served environment where you can work alongside freelancers, entrepreneurs, and remote workers. With a vibrant community atmosphere, you’ll enjoy the flexibility of moving around the space while still having access to essential amenities. It’s perfect for those who thrive on collaboration and variety, allowing you to make connections while staying productive.</p>
+              <p >Our open desk option offers a dynamic, first-come, first-served environment where you can work alongside freelancers, entrepreneurs, and remote workers. With a vibrant community atmosphere, you’ll enjoy the flexibility of moving around the space while still having access to essential amenities. It’s perfect for those who thrive on collaboration and variety, allowing you to make connections while staying productive.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5" id="dedicated-desk">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 mx-auto" id="dedicated-desk">
-            <div class="card card-body shadow border border-warning border-4 p-5">
-              <img src="/images/dedicated.jpeg" alt="flexible" class="img-fluid mb-4" />
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="p-5">
               <h3 class="fw-bold mb-3">Dedicated Desk</h3>
-              <p style="text-align: justify;"> A dedicated desk provides the stability of a permanent workstation in our shared co-working space. You’ll have a desk that’s yours every day, offering a personalized space where you can leave your equipment and make it feel like home. It’s ideal for professionals who prefer consistency in their workspace while enjoying the energy and networking opportunities that come with being part of a co-working environment. You’ll also have access to all shared amenities, plus a secure spot to focus on your work.</p>
+              <p > A dedicated desk provides the stability of a permanent workstation in our shared co-working space. You’ll have a desk that’s yours every day, offering a personalized space where you can leave your equipment and make it feel like home. It’s ideal for professionals who prefer consistency in their workspace while enjoying the energy and networking opportunities that come with being part of a co-working environment. You’ll also have access to all shared amenities, plus a secure spot to focus on your work.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="/images/dedicated.jpeg" alt="flexible" class="img-fluid mb-4" />
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5" id="dedicated-offices">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="/images/cabin.jpeg" alt="flexible" class="img-fluid mb-4" />
+          </div>
+          
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="p-5">
+              <h3 class="fw-bold mb-3">Dedicated Office</h3>
+              <p >Our dedicated offices offer a private, lockable office for individuals or small teams. These offices provide the peace and quiet needed for focused work, client meetings, or confidential discussions, all while giving you access to shared amenities like meeting rooms and community areas. They’re ideal for businesses or professionals looking for privacy and exclusivity, combined with the convenience of a co-working environment. With room to expand, these offices are perfect for growing teams or startups seeking a professional, permanent base.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="container my-5">
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 mx-auto" id="dedicated-cabin">
-            <div class="card card-body shadow border border-warning border-4 p-5">
-              <img src="/images/cabin.jpeg" alt="flexible" class="img-fluid mb-4" />
-              <h3 class="fw-bold mb-3">Dedicated Cabin</h3>
-              <p style="text-align: justify;">Our dedicated cabins offer a private, lockable office for individuals or small teams. These cabins provide the peace and quiet needed for focused work, client meetings, or confidential discussions, all while giving you access to shared amenities like meeting rooms and community areas. They’re ideal for businesses or professionals looking for privacy and exclusivity, combined with the convenience of a co-working environment. With room to expand, these cabins are perfect for growing teams or startups seeking a professional, permanent base.</p>
-            </div>
+        <div class="row">
+          <div class="col">
+            <hr>
           </div>
         </div>
       </div>
-      <div class="container my-5">
+
+      <div class="container my-5" id="dedicated-cabins">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 mx-auto" id="meeting-room">
-            <div class="card card-body shadow border border-warning border-4 p-5">
-              <img src="/images/meeting.jpeg" alt="flexible" class="img-fluid mb-4" />
-              <h3 class="fw-bold mb-3">Meeting Room</h3>
-              <p style="text-align: justify;">Our meeting rooms are designed for small group discussions, one-on-one meetings, or team collaborations. With a professional yet comfortable atmosphere, these rooms come equipped with everything you need for a productive session. Whether you're hosting a client, interviewing a new team member, or brainstorming with colleagues, our meeting rooms offer privacy and focus. Flexible booking options allow you to reserve these spaces depending on your needs.</p>
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="p-5">
+              <h3 class="fw-bold mb-3">Dedicated Cabins</h3>
+              <p >Our meeting rooms are designed for small group discussions, one-on-one meetings, or team collaborations. With a professional yet comfortable atmosphere, these rooms come equipped with everything you need for a productive session. Whether you're hosting a client, interviewing a new team member, or brainstorming with colleagues, our meeting rooms offer privacy and focus. Flexible booking options allow you to reserve these spaces depending on your needs.</p>
             </div>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="/images/meeting.jpeg" alt="flexible" class="img-fluid mb-4" />
           </div>
         </div>
       </div>
+
       <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="container my-5" id="conference-room">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6 mx-auto" id="conference-room">
-            <div class="card card-body shadow border border-warning border-4 p-5">
-              <img src="/images/conference.jpeg" alt="flexible" class="img-fluid mb-4" />
+          <div class="col-sm-12 col-md-6 mb-4">
+            <img src="/images/conference.jpeg" alt="flexible" class="img-fluid mb-4" />
+          </div>
+
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="p-5">
               <h3 class="fw-bold mb-3">Conference Room</h3>
-              <p style="text-align: justify;">Designed for larger gatherings, our conference rooms are perfect for board meetings, presentations, workshops, or training sessions. Equipped with state-of-the-art technology including projectors, video conferencing capabilities, and high-speed internet, these rooms ensure your event runs seamlessly. With comfortable seating arrangements and a professional atmosphere, they’re suitable for impressing clients, conducting team strategy sessions, or hosting seminars. Our flexible scheduling and support staff make it easy to arrange the space for your specific requirements, ensuring every event is a success.</p>
+              <p >Designed for larger gatherings, our conference rooms are perfect for board meetings, presentations, workshops, or training sessions. Equipped with state-of-the-art technology including projectors, video conferencing capabilities, and high-speed internet, these rooms ensure your event runs seamlessly. With comfortable seating arrangements and a professional atmosphere, they’re suitable for impressing clients, conducting team strategy sessions, or hosting seminars. Our flexible scheduling and support staff make it easy to arrange the space for your specific requirements, ensuring every event is a success.</p>
             </div>
           </div>
         </div>
@@ -210,25 +263,25 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-3 mb-4">
-          <div class="card card-body text-center">
+          <div class="card card-body text-center d-flex flex-column justify-content-between" style="height: 100%;">
             <img src="/images/metro.png" alt="metro" class="img-fluid mb-4" />
             <p>Near to Metro & Local Bus transport</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 mb-4">
-          <div class="card card-body text-center">
+          <div class="card card-body text-center d-flex flex-column justify-content-between" style="height: 100%;">
             <img src="/images/bus-cen.png" alt="metro" class="img-fluid mb-4" />
             <p>Surrounded by business centers</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 mb-4">
-          <div class="card card-body text-center">
+          <div class="card card-body text-center d-flex flex-column justify-content-between" style="height: 100%;">
             <img src="/images/lulu.png" alt="metro" class="img-fluid mb-4" />
             <p>Near LuLu Mall for all recreationals</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-3 mb-4">
-          <div class="card card-body text-center">
+          <div class="card card-body text-center d-flex flex-column justify-content-between" style="height: 100%;">
             <img src="/images/calm.png" alt="metro" class="img-fluid mb-4" />
             <p>Calm and relaxing work atmosphere</p>
           </div>
@@ -281,9 +334,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <div class="container my-5 pt-5" id="contact" style="padding-bottom: 10rem;">
+      <div class="container my-5 pt-5" id="contact" style="padding-bottom: 5rem;">
         <div class="row">
-          <div class="col-md-4 mx-auto text-center">
+          <div class="col-md-6 mx-auto text-center">
             <h2 class="fw-bold mb-0">Contact</h2>
             <p>If you have any queries or concerns, please feel free to contact us. We are always happy to help.</p>
 
@@ -293,16 +346,12 @@ import Layout from '../layouts/Layout.astro';
               <a href="https://wa.me/919030082758" class="link-underline link-underline-opacity-0"><i class="bi bi-whatsapp text-success"></i> Chat On WhatsApp</a>
             </div>
 
-            <div class="mt-4">
+            <div class="my-4">
               <small>Email</small>
               <p class="mb-0">contact@techshorecoworking.com</p>
             </div>
 
-            <div class="mt-5 py-5">
-              <img src="/images/techshore.png" alt="techshore" width="128">
-              <h1 class="fw-bold mb-0">Techshore</h1>
-              <h3>Co-Working Space</h3> 
-            </div>
+            <img src="/images/techshore.png" alt="techshore" width="64">
         </div>
       </div>
     </div>
