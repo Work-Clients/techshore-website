@@ -21,6 +21,32 @@ import Layout from '../layouts/Layout.astro';
   right: 20px;
   z-index: 999;
 }
+
+#title {
+    font-size: 3.3rem;
+  }
+
+  #subtitle {
+    letter-spacing: 0.125rem;
+  }
+
+  #logo {
+    width: 64px;
+  }
+
+@media (max-width: 768px) { 
+  #logo {
+    width: 32px;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  #subtitle {
+    letter-spacing: 0.125rem;
+  }
+ }
 </style>
 
 <Layout title="Techshore Co-Working Space">
@@ -28,10 +54,10 @@ import Layout from '../layouts/Layout.astro';
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-6 mb-4">
           <div class="d-flex">
-            <img src="/images/techshore.png" alt="techshore" width="64">
-            <h1 class="fw-bold mb-0" style="font-size: 53px;">TECHSHORE</h1>
+            <img src="/images/techshore.png" alt="techshore" id="logo">
+            <h1 class="fw-bold mb-0" id="title">TECHSHORE</h1>
           </div>
-          <h1 class="mb-5 fw-bold" style="letter-spacing: 2px;">Co-Working Space</h1>
+          <h1 class="mb-5 fw-bold" id="subtitle">Co-Working Space</h1>
           <h5>Affordable & Comfortable Co-Working Space at the heart of Hyderabad suited for all your business needs.</h5>
           <a href="#enquiry" class="btn btn-secondary btn-lg mt-3">Book Your Space <i class="bi bi-arrow-right ms-3"></i></a>
 
@@ -203,7 +229,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="container my-5" style="padding: 5rem 0rem;" id="amenities">
+    <div class="container my-5" style="padding-top: 5rem; padding-bottom: 5rem;" id="amenities">
       <div class="row text-white mb-5">
         <div class="col-md-6 mx-auto text-center">
           <h2 class="fw-bold text-white mb-0">Amenities</h2>
